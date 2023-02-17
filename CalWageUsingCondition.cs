@@ -6,18 +6,26 @@ using System.Threading.Tasks;
 
 namespace EmpWageComputationUsingOpps
 {
-    internal class CalWageUsingCondition
+   internal class CalWageUsingConstructor
     {
-        public const int Emp_Rate_Per_Hour = 20;
-        public const int Is_Full_Time = 1;
-        public const int Is_Part_Time = 2;
-        public const int WORKING_DAYS = 20;
-        public const int MAX_HRS_IN_MONTH = 10;
-        public  void HrsPerMonth()
+        int EmpHrs = 0, TotalEmpWage = 0, TotalEmpHrs = 0, TotalEmpWages = 0;
+        int TotalWorkingDays = 0;
+
+          int Emp_Rate_Per_Hour = 20;
+         
+          int WORKING_DAYS ;
+          int MAX_HRS_IN_MONTH;
+        public CalWageUsingConstructor(int W_Days, int HrsIn_Mnt)
+        {
+            WORKING_DAYS = W_Days;
+            MAX_HRS_IN_MONTH = HrsIn_Mnt;
+        }
+       public const int Is_Full_Time = 1;
+       public const int Is_Part_Time = 2;
+        public void HrsPerMonth()
         {
 
-            int EmpHrs = 0, TotalEmpWage = 0, TotalEmpHrs = 0, TotalEmpWages = 0;
-            int TotalWorkingDays = 0;
+           
 
             while (TotalEmpHrs <= MAX_HRS_IN_MONTH && TotalWorkingDays < WORKING_DAYS)
             {
@@ -43,6 +51,6 @@ namespace EmpWageComputationUsingOpps
             TotalEmpWage = Emp_Rate_Per_Hour * TotalEmpHrs;
             Console.WriteLine(" Employee Total Wage :" + TotalEmpWage);
         }
-    }
+   }
 }
 
