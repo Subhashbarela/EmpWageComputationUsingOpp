@@ -10,7 +10,8 @@ namespace EmpWageComputationUsingOpps
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Opps Programing Methodology :..");
+            CheckEmpAvailability Obj1= new CheckEmpAvailability();
+            Obj1.CheckEmp();
         }
     }
 }
