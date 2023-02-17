@@ -10,7 +10,8 @@ namespace EmpWageComputationUsingOpps
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Opps Programing Methodology :..");
+            AddPartTimeEmp Obj = new AddPartTimeEmp();
+                Obj.EmpFull_Part();
         }
     }
 }
