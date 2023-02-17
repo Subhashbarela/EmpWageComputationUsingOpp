@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace EmpWageComputationUsingOpps
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Opps Programing Methodology :..");
+            EmployeeDailyWages Obj= new EmployeeDailyWages();
+            Obj.EmpWage();
+            Console.ReadKey();
         }
+
     }
 }
