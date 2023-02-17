@@ -8,8 +8,12 @@ namespace EmpWageComputationUsingOpps
 {
     internal class EmployeeDailyWages
     {
-        int Is_Full_Time = 1;
-        int Emp_Rate_Per_Hour = 20;
+         int Is_Full_Time = 1;
+        int Emp_Rate_Per_Hour;
+        public EmployeeDailyWages(int EmpRtPrHrs)
+        {
+            Emp_Rate_Per_Hour=EmpRtPrHrs;
+        }
         public  void EmpWage()
         {
            
