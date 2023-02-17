@@ -10,7 +10,7 @@ namespace EmpWageComputationUsingOpps
     {
         static void Main(string[] args)
         {
-            EmployeeDailyWages Obj= new EmployeeDailyWages();
+            EmployeeDailyWages Obj= new EmployeeDailyWages(20);
             Obj.EmpWage();
             Console.ReadKey();
         }
