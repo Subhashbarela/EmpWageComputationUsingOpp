@@ -10,7 +10,8 @@ namespace EmpWageComputationUsingOpps
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Opps Programing Methodology :..");
+            EmpWagesUsingSwitchCase Emp = new EmpWagesUsingSwitchCase(20);
+            Emp.SwitchCase();
         }
     }
 }
